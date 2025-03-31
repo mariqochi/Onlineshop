@@ -1,0 +1,65 @@
+﻿@model OnlineStore.Models.Entities.Product
+
+@{
+    ViewData["Title"] = "Add Product";
+}
+
+<h2>Add Product</h2>
+
+<!-- ✅ Make sure method="post" and enctype="multipart/form-data" is included -->
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BriefDescription" class="control-label"></label>
+        <textarea asp-for="BriefDescription" class="form-control"></textarea>
+        <span asp-validation-for="BriefDescription" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CategoryId" class="control-label">Category</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+            <option value="">-- Select Category --</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SubCategoryId" class="control-label">SubCategory</label>
+        <select asp-for="SubCategoryId" class="form-control" asp-items="ViewBag.SubCategories">
+            <option value="">-- Select SubCategory --</option>
+        </select>
+        <span asp-validation-for="SubCategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageUrl" class="control-label">Product Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+
+        <!-- Only display the image if the ImageUrl is not null -->
+        @if (Model?.ImageUrl != null)
+        {
+            <img src="@Url.Content(Model.ImageUrl)" alt="Product Image" class="img-fluid" />
+        }
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

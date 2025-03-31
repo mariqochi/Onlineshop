@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Header Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">Online Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <!-- Show Logout Button if User is Logged In -->
+                    <li class="nav-item">
+                        <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-danger">Logout</button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <!-- Show Login Button if User is Not Logged In -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Login", "Account")">Login</a>
+                    </li>
+                    <!-- Show Register Button if User is Not Logged In -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Register", "Account")">Register</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5 text-center">
+    <h1 class="display-4">Welcome to the Online Store</h1>
+    <p>Learn about building Web apps with <a href="https://learn.microsoft.com/aspnet/core" target="_blank">ASP.NET Core</a>.</p>
+
+    <!-- Display success message if any -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+</div>
+
+<hr>
+
+<!-- Additional Information Section -->
+<div class="container mt-5">
+    <h3>Our Features</h3>
+    <p>Explore our Online Store to find the best products. We offer a wide range of categories and amazing discounts for you to enjoy!</p>
+</div>

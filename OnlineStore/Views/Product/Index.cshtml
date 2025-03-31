@@ -1,0 +1,50 @@
+﻿@model IEnumerable<OnlineStore.Models.Entities.Product>
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Filter Form (optional) -->
+<form method="get">
+    <div class="form-group">
+        <label for="search">Search</label>
+        <input type="text" class="form-control" id="search" name="search" value="@Context.Request.Query["search"]" />
+    </div>
+    <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text" class="form-control" id="category" name="category" value="@Context.Request.Query["category"]" />
+    </div>
+    <div class="form-group">
+        <label for="subcategory">SubCategory</label>
+        <input type="text" class="form-control" id="subcategory" name="subcategory" value="@Context.Request.Query["subcategory"]" />
+    </div>
+    <div class="form-group">
+        <label for="minPrice">Min Price</label>
+        <input type="number" class="form-control" id="minPrice" name="minPrice" value="@Context.Request.Query["minPrice"]" />
+    </div>
+    <div class="form-group">
+        <label for="maxPrice">Max Price</label>
+        <input type="number" class="form-control" id="maxPrice" name="maxPrice" value="@Context.Request.Query["maxPrice"]" />
+    </div>
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>
+
+<!-- Product List -->
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <img src="@product.ImageUrl" alt="@product.Name" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">Category: @product.Category</p>
+                    <p class="card-text">$@product.Price</p>
+                    <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="btn btn-info">View Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

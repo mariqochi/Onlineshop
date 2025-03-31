@@ -1,0 +1,113 @@
+﻿@model OnlineStore.Models.Entities.Product
+
+@{
+    ViewData["Title"] = Model.Name + " " + Model.BriefDescription;
+}
+
+<div class="container mt-4">
+    <h2>@Model.Name - @Model.BriefDescription</h2>
+
+    <!-- Product Image -->
+    <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid" style="max-width: 300px;" />
+
+    <!-- Product Basic Info -->
+    <p><strong>Category:</strong> @Model.Category</p>
+    <p><strong>Subcategory:</strong> @Model.SubCategory</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Price:</strong> $@Model.Price</p>
+    <p><strong>Average Rating:</strong> ⭐ @Model.Rating.ToString("0.0") / 5</p>
+
+    <!-- Buttons for Details & Reviews -->
+    <button class="btn btn-info" id="showDetails">Product Details</button>
+    <button class="btn btn-secondary" id="showReviews">Reviews (@Model.Reviews.Count)</button>
+
+    <!-- Rating and Add to Cart Buttons -->
+    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ratingModal">Rate Product</button>
+    <form method="post" asp-controller="Cart" asp-action="AddToCart" style="display: inline;">
+        <input type="hidden" name="productId" value="@Model.Id" />
+        <button type="submit" class="btn btn-success">Add to Cart</button>
+    </form>
+
+    <!-- Details Section (Initially Hidden) -->
+    <div id="detailsSection" class="mt-3" style="display: none;">
+        <h4>Product Details</h4>
+        <p>@Model.BriefDescription</p>
+    </div>
+
+    <!-- Reviews Section (Initially Hidden) -->
+    <div id="reviewsSection" class="mt-3" style="display: none;">
+        <h4>Customer Reviews</h4>
+
+        @if (Model.Reviews.Any())
+        {
+            @foreach (var review in Model.Reviews)
+            {
+                <div class="review-card border p-3 mb-2">
+                    <strong>@review.User</strong> <span class="text-muted">@review.Date ToShortDateString()</span>
+                    <p>⭐ @review.Rating / 5</p>
+                    <p>@review.ReviewText</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No reviews yet.</p>
+        }
+    </div>
+</div>
+
+<!-- Rating Modal -->
+<div class="modal fade" id="ratingModal" tabindex="-1" aria-labelledby="ratingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ratingModalLabel">Rate this Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-controller="Reviews" asp-action="SubmitReview">
+                    <input type="hidden" name="productId" value="@Model.Id" />
+
+                    <!-- Rating -->
+                    <div class="mb-3">
+                        <label class="form-label">Rating (1-5 Stars)</label>
+                        <select name="rating" class="form-select" required>
+                            <option value="5">⭐️⭐️⭐️⭐️⭐️ (5)</option>
+                            <option value="4">⭐️⭐️⭐️⭐️ (4)</option>
+                            <option value="3">⭐️⭐️⭐️ (3)</option>
+                            <option value="2">⭐️⭐️ (2)</option>
+                            <option value="1">⭐️ (1)</option>
+                        </select>
+                    </div>
+
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" name="fullName" class="form-control" required />
+                    </div>
+
+                    <!-- Review Text -->
+                    <div class="mb-3">
+                        <label class="form-label">Review</label>
+                        <textarea name="comment" class="form-control" rows="3" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to Handle Sections -->
+<script>
+    document.getElementById("showDetails").addEventListener("click", function() {
+        document.getElementById("detailsSection").style.display = "block";
+        document.getElementById("reviewsSection").style.display = "none";
+    });
+
+    document.getElementById("showReviews").addEventListener("click", function() {
+        document.getElementById("reviewsSection").style.display = "block";
+        document.getElementById("detailsSection").style.display = "none";
+    });
+</script>
