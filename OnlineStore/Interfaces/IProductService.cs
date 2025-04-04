@@ -9,7 +9,7 @@ namespace OnlineStore.Interfaces
         Task AddProductAsync(Product product);
         Task UpdateProductAsync(Product product);
         Task DeleteProductAsync(int id);
-        Task AddReviewAsync(int productId, int rating, string reviewText);
+        Task AddReviewAsync(int productId, int rating, string reviewText, string? userId);
 
         
     }

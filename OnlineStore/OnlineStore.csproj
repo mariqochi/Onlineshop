@@ -18,14 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\Images\1.png" />
     <None Include="wwwroot\Images\accseesorizesmartwach.png" />
-    <None Include="wwwroot\Images\mobile_samsung1.png" />
   </ItemGroup>
 
 </Project>

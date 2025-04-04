@@ -1,0 +1,333 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OnlineStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\OnlineStore.fya5ruhv9d.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\1.png",
+      "PackagePath": "staticwebassets\\Images\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\2a1509d0-4d4d-4c6a-a8ef-be37e7f99140.png",
+      "PackagePath": "staticwebassets\\Images\\2a1509d0-4d4d-4c6a-a8ef-be37e7f99140.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\3187e989-d799-48e7-937f-048101ab74a0.png",
+      "PackagePath": "staticwebassets\\Images\\3187e989-d799-48e7-937f-048101ab74a0.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\490261a0-73b4-48e6-9152-54c36ce79a54.png",
+      "PackagePath": "staticwebassets\\Images\\490261a0-73b4-48e6-9152-54c36ce79a54.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\50ffdce4-cdd0-4015-8b48-8c7ff78ac07b.png",
+      "PackagePath": "staticwebassets\\Images\\50ffdce4-cdd0-4015-8b48-8c7ff78ac07b.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\5d2dd475-afd0-432d-b009-f76ac3a634e0.png",
+      "PackagePath": "staticwebassets\\Images\\5d2dd475-afd0-432d-b009-f76ac3a634e0.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\5fc92749-945b-4b69-b6cd-33be577d4a97.png",
+      "PackagePath": "staticwebassets\\Images\\5fc92749-945b-4b69-b6cd-33be577d4a97.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\66d265ab-31cc-4a73-a29f-5e0195a95e73.png",
+      "PackagePath": "staticwebassets\\Images\\66d265ab-31cc-4a73-a29f-5e0195a95e73.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\815c505e-bb1e-4ebb-8fb9-b7a76cc3bf08.png",
+      "PackagePath": "staticwebassets\\Images\\815c505e-bb1e-4ebb-8fb9-b7a76cc3bf08.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\988ba8b3-fe9e-4ef5-b55f-46e78d0a9c50.png",
+      "PackagePath": "staticwebassets\\Images\\988ba8b3-fe9e-4ef5-b55f-46e78d0a9c50.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\a66763ce-11cc-4e41-bc97-94e6bd60c19d.png",
+      "PackagePath": "staticwebassets\\Images\\a66763ce-11cc-4e41-bc97-94e6bd60c19d.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\accseesorizesmartwach.png",
+      "PackagePath": "staticwebassets\\Images\\accseesorizesmartwach.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\c32bedbf-8145-47ec-8cb9-a1f068b23cdf.png",
+      "PackagePath": "staticwebassets\\Images\\c32bedbf-8145-47ec-8cb9-a1f068b23cdf.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\cad2ea8f-62df-4c63-b722-2dd42b10347c.png",
+      "PackagePath": "staticwebassets\\Images\\cad2ea8f-62df-4c63-b722-2dd42b10347c.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\df916930-4b87-4f37-8a65-34fc1e8d133a.png",
+      "PackagePath": "staticwebassets\\Images\\df916930-4b87-4f37-8a65-34fc1e8d133a.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\Images\\mobile_samsung1.png",
+      "PackagePath": "staticwebassets\\Images\\mobile_samsung1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\OnlineStore\\OnlineStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OnlineStore.props",
+      "PackagePath": "build\\OnlineStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OnlineStore.props",
+      "PackagePath": "buildMultiTargeting\\OnlineStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OnlineStore.props",
+      "PackagePath": "buildTransitive\\OnlineStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

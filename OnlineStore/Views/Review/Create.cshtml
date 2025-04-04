@@ -1,0 +1,28 @@
+﻿@model OnlineStore.Models.ViewModels.ReviewViewModel
+
+@{
+    ViewData["Title"] = "Write a Review";
+}
+
+<div class="container mt-4">
+    <h2>Write a Review</h2>
+
+    <form method="post" asp-action="Create">
+        <input type="hidden" name="ProductId" value="@Model.ProductId" />
+
+        <div class="form-group">
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="Rating" min="1" max="5" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="reviewText">Review:</label>
+            <!-- ✅ name must be ReviewText -->
+            <textarea id="reviewText" name="ReviewText" class="form-control" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+    </form>
+</div>
+
+

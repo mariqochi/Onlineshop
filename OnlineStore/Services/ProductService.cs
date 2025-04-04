@@ -26,25 +26,21 @@ namespace OnlineStore.Services
 
         // ✅ Get all products with filtering
         public async Task<List<Product>> GetAllProductsAsync(
-            string search,
-            string category,
-            string subcategory,
-            decimal? minPrice,
-            decimal? maxPrice)
+        string search, string category, string subcategory, decimal? minPrice, decimal? maxPrice)
         {
             var query = _context.Products
                 .Include(p => p.Category)
-                .Include(p => p.SubCategory) // ✅ Fixed SubCategory issue
+                .Include(p => p.SubCategory)
                 .AsQueryable();
 
             if (!string.IsNullOrEmpty(search))
                 query = query.Where(p => p.Name.Contains(search));
 
             if (!string.IsNullOrEmpty(category))
-                query = query.Where(p => p.Category != null && p.Category.Name == category);
+                query = query.Where(p => p.Category != null && p.Category.Name == category); // ✅ Fix for dropdown
 
             if (!string.IsNullOrEmpty(subcategory))
-                query = query.Where(p => p.SubCategory != null && p.SubCategory.Name == subcategory);
+                query = query.Where(p => p.SubCategory != null && p.SubCategory.Name == subcategory); // ✅ Fix for dropdown
 
             if (minPrice.HasValue)
                 query = query.Where(p => p.Price >= minPrice.Value);
@@ -56,10 +52,12 @@ namespace OnlineStore.Services
         }
 
         // ✅ Get product by ID (including reviews)
-        public async Task<Product> GetProductByIdAsync(int id)
+        public async Task<Product?> GetProductByIdAsync(int id)
         {
             return await _context.Products
-                .Include(p => p.Reviews)
+                .Include(p => p.Category)  // ✅ Load Category
+                .Include(p => p.SubCategory)  // ✅ Load SubCategory
+                .Include(p => p.Reviews)  // ✅ Load Reviews
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
@@ -71,7 +69,6 @@ namespace OnlineStore.Services
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
         }
-
 
         // ✅ Update Product (Only Admin)
         public async Task UpdateProductAsync(Product product)
@@ -134,6 +131,11 @@ namespace OnlineStore.Services
             if (httpContext == null) return false;
 
             return httpContext.User.IsInRole("Admin");
+        }
+
+        public Task AddReviewAsync(int productId, int rating, string reviewText, string? userId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

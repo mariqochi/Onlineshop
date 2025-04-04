@@ -6,7 +6,6 @@
 
 <h2>Add Product</h2>
 
-<!-- ✅ Make sure method="post" and enctype="multipart/form-data" is included -->
 <form asp-action="Create" method="post" enctype="multipart/form-data">
     @Html.AntiForgeryToken()
 
@@ -30,7 +29,7 @@
 
     <div class="form-group">
         <label asp-for="CategoryId" class="control-label">Category</label>
-        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+        <select asp-for="CategoryId" id="CategoryDropdown" class="form-control" asp-items="ViewBag.Categories">
             <option value="">-- Select Category --</option>
         </select>
         <span asp-validation-for="CategoryId" class="text-danger"></span>
@@ -38,23 +37,44 @@
 
     <div class="form-group">
         <label asp-for="SubCategoryId" class="control-label">SubCategory</label>
-        <select asp-for="SubCategoryId" class="form-control" asp-items="ViewBag.SubCategories">
+        <select asp-for="SubCategoryId" id="SubCategoryDropdown" class="form-control">
             <option value="">-- Select SubCategory --</option>
         </select>
         <span asp-validation-for="SubCategoryId" class="text-danger"></span>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#CategoryDropdown").change(function () {
+                var categoryId = $(this).val();
+                $.ajax({
+                    url: '/Product/GetSubCategories',  // Calls the controller action
+                    type: 'GET',
+                    data: { categoryId: categoryId },
+                    success: function (data) {
+                        var subCategoryDropdown = $("#SubCategoryDropdown");
+                        subCategoryDropdown.empty();
+                        subCategoryDropdown.append('<option value="">-- Select SubCategory --</option>');
+                        $.each(data, function (index, item) {
+                            subCategoryDropdown.append($('<option>', { value: item.id, text: item.name }));
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
     <div class="form-group">
         <label asp-for="ImageUrl" class="control-label">Product Image</label>
         <input type="file" name="ImageFile" class="form-control" />
 
-        <!-- Only display the image if the ImageUrl is not null -->
-        @if (Model?.ImageUrl != null)
+        @if (!string.IsNullOrEmpty(Model?.ImageUrl) || TempData["UploadedImageUrl"] != null)
         {
-            <img src="@Url.Content(Model.ImageUrl)" alt="Product Image" class="img-fluid" />
+            <img src="@Url.Content(Model?.ImageUrl ?? TempData["UploadedImageUrl"]?.ToString())"
+                 alt="Product Image" class="img-fluid" />
         }
     </div>
-
 
     <button type="submit" class="btn btn-primary">Save</button>
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>

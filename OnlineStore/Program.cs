@@ -46,8 +46,16 @@ namespace OnlineStore
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";
+                options.AccessDeniedPath = "/Account/AccessDenied";
+            });
+
             // Register ProductService and its interface IProductService
             builder.Services.AddScoped<IProductService, ProductService>(); // Register service for DI
+
+            builder.Services.AddScoped<IReviewService, ReviewService>();
 
             builder.Services.AddAuthorization(options =>
             {

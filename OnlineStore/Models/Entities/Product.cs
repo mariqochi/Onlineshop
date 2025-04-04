@@ -1,5 +1,5 @@
-﻿using OnlineStore.Models.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OnlineStore.Models.Entities
 {
@@ -8,20 +8,21 @@ namespace OnlineStore.Models.Entities
         public int Id { get; set; }
 
         // Foreign Key to Category
-        public int CategoryId { get; set; }  // Nullable to allow SetNull behavior
-        public Category Category { get; set; }  // Navigation property to Category
+        public int CategoryId { get; set; }
+        [ForeignKey("CategoryId")]
+        public Category? Category { get; set; }
 
         // Foreign Key to Subcategory
-        public int? SubCategoryId { get; set; }  // Nullable to allow Restrict or SetNull behavior
-        public SubCategory SubCategory { get; set; }  // Navigation property to Subcategory
-      
-        public string Name { get; set; } // Product name (Brand + Model)
+        public int? SubCategoryId { get; set; }
+        [ForeignKey("SubCategoryId")]
+        public SubCategory? SubCategory { get; set; }
+
+        public string Name { get; set; }
         public string BriefDescription { get; set; }
         public decimal Price { get; set; }
-        public double Rating { get; set; }  // Can be calculated from reviews
+        public double Rating { get; set; }
         public string ImageUrl { get; set; }
 
-        // Navigation property to link reviews to the product
         public List<Review> Reviews { get; set; }
     }
 }
